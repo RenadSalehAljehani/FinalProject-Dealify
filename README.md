@@ -77,7 +77,7 @@ Class Diagram:
 
 
 # BackEnd:
-- Models:
+- Models + CRUD:
 1. Category
 2. CustomerReview
 3. Inventory
