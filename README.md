@@ -1,48 +1,5 @@
-FinalProject
-Delify | صفقتنا
-"Delify | صفقتنا" is an innovative platform that offers users the opportunity to purchase products at discounted prices by gathering a sufficient number of participants for the same deal.
-
----
-
-Objective
-Enable users to enjoy reduced prices through collective purchasing.
-Provide a seamless and reliable shopping experience.
-Increase merchants' profits by consolidating large orders.
-
----
-
-Target Audience
-Individuals seeking significant deals and offers.
-Merchants looking to showcase and sell their products efficiently.
-
----
-
-User Flow
-Registered Users
-Track their deals.
-Create or join deals.
-Review products, merchants, or other users they have participated with in deals.
-Request to be removed from the blocklist.
-Submit product return requests with reasons.
-
-Merchants
-Add new products.
-Add or remove users from the blocklist (Blocklist Management).
-Approve or reject return requests (Return Management).
-Rate customers.
-
-
-
-
-
-
-
-
-
-
-
 # Dealify | صفقتنا
-Dealify is an innovative platform that allows users to purchase products at discounted prices by gathering a specific number of participants in the same deal.
+Delify | صفقتنا" is an innovative platform that offers users the opportunity to purchase products at discounted prices by gathering a sufficient number of participants for the same deal
 #
 Key Features:
 - For Customers:
