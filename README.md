@@ -72,39 +72,38 @@ UseCase Diagrams:
 - ![UseCase](https://github.com/user-attachments/assets/12d485e2-0cf4-4181-8254-3eb917b8670d)
 
 
-
 Class Diagram:
 - ![Class Diagram](https://github.com/user-attachments/assets/6df6f3d8-4659-480f-b86a-6cc68798e1a8)
 
 
 #
--BackEnd:
-Models:
+- BackEnd:
+- Models:
 1. Category
 2. CustomerReview
 3. Inventory
 4. Product
 5. ReturnRequest.
 
-Repositories:
+- Repositories:
 1. CategoryRepository.
 2. CustomerReviewRepository.
 3. InventoryRepository.
 4. ProductRepository.
 5. ReturnRequestRepository.
 
-Services:
+- Services:
 1. CategoryService
 2. InventoryService
 3. ReturnRequestService
 
-Controller:
+- Controller:
 1. CategoryController
 2. CustomerReviewController
 3. InventoryController
 4. ReturnRequestController
 
-In & Out DTOs:
+- In & Out DTOs:
 1. CustomerReviewInDTO
 2. ProductInDTO
 3. ReturnRequestCustomerInDTO
@@ -113,14 +112,14 @@ In & Out DTOs:
 6. ProductOutDTO
 7. ReturnRequestOutDTO
 
-JUnit Test:
+- JUnit Test:
 1. addCategoryTest()
 2. updateCategoryTest()
 3. viewProductDealsTest()
 4. viewCustomerOpenedDealsTest()
 5. viewVendorsOpenDealsTest()
 
-Extra Endpoints:
+- Extra Endpoints:
 1. public ResponseEntity getCategoryByName(@PathVariable String name) {}
 2. public ResponseEntity viewDealsByProductCategory(@PathVariable(name = "category-name") String categoryName) {}
 3. public ResponseEntity deleteACustomerReview(@AuthenticationPrincipal MyUser myUser, @PathVariable(name = "review-id") Integer ReviewId) {}
