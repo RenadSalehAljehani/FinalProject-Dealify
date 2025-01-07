@@ -76,8 +76,7 @@ Class Diagram:
 - ![Class Diagram](https://github.com/user-attachments/assets/6df6f3d8-4659-480f-b86a-6cc68798e1a8)
 
 
-#
-- BackEnd:
+#- BackEnd:
 - Models:
 1. Category
 2. CustomerReview
