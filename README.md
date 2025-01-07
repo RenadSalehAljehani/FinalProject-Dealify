@@ -116,9 +116,9 @@ In & Out DTOs:
 JUnit Test:
 1. addCategoryTest()
 2. updateCategoryTest()
-3. DealServiceTest
-4. updateVendorTest()
-5. deleteVendorTest()
+3. viewProductDealsTest()
+4. viewCustomerOpenedDealsTest()
+5. viewVendorsOpenDealsTest()
 
 Extra Endpoints:
 1. public ResponseEntity getCategoryByName(@PathVariable String name) {}
