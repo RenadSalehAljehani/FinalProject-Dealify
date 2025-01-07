@@ -96,7 +96,7 @@ Class Diagram:
 2. InventoryService
 3. ReturnRequestService
 
-- Controller:
+- Controllers:
 1. CategoryController
 2. CustomerReviewController
 3. InventoryController
@@ -111,7 +111,7 @@ Class Diagram:
 6. ProductOutDTO
 7. ReturnRequestOutDTO
 
-- JUnit Test:
+- JUnit Tests:
 1. addCategoryTest()
 2. updateCategoryTest()
 3. viewProductDealsTest()
