@@ -69,12 +69,13 @@ Dealify connects users and vendors in a unified platform, creating a collaborati
 #
 # Diagrams
 UseCase Diagrams:
+![UseCase](https://github.com/user-attachments/assets/12d485e2-0cf4-4181-8254-3eb917b8670d)
 
-![UseCase](https://github.com/user-attachments/assets/4dd2d850-a491-451b-8e94-c04c3a215827)
+
 
 Class Diagram:
+![Class Diagram](https://github.com/user-attachments/assets/6df6f3d8-4659-480f-b86a-6cc68798e1a8)
 
-![Class Diagram](https://github.com/user-attachments/assets/9bed6ad3-19b9-4eb3-a15f-d2a6064c7b68)
 
 #
 BackEnd:
