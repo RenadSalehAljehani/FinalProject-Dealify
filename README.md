@@ -1,5 +1,5 @@
 # Dealify | صفقتنا
-Delify | صفقتنا" is an innovative platform that offers users the opportunity to purchase products at discounted prices by gathering a sufficient number of participants for the same deal
+Delify is an innovative platform that offers users the opportunity to purchase products at discounted prices by gathering a sufficient number of participants for the same deal
 #
 Key Features:
 - For Customers:
