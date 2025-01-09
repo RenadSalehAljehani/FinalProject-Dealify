@@ -84,7 +84,6 @@ public class VendorReviewService {
 
 
 
-
     public void updateVendorReview(Integer customerId,Integer reviewId, VendorReviewInDTO vendorReviewInDTO) {
         Customer customer = customerRepository.findCustomerById(customerId);
         if (customer == null) {
@@ -126,6 +125,4 @@ public class VendorReviewService {
         vendorProfileRepository.save(vendorProfile);
         vendorReviewRepository.delete(vendorReview);
     }
-
-
 }

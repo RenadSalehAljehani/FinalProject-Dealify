@@ -28,7 +28,7 @@ public class Deal {//Waleed
     private Integer participantsLimit;
 
     @Column(columnDefinition = "varchar(9) not null")
-    @Pattern(regexp = "^(?i)(Open|Completed)$")
+    @Pattern(regexp = "^(open|completed)$")
     private String status;
 
     @Column(columnDefinition = "int not null")

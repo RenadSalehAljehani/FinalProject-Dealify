@@ -105,5 +105,4 @@ public class DealService {
 
         return dealOutDTOS;
     }
-
 }

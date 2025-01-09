@@ -27,9 +27,12 @@ public class FavoriteService {
     public void addProductToFavorite(CustomerProfile customer,Product product){
         Favorite favorite=favoriteRepository.findFavoriteByCustomer(customer);
 
-        if (favorite==null) {favorite=new Favorite(); favorite.setCustomer(customer);}
+        if (favorite == null) {
+            favorite = new Favorite();
+            favorite.setCustomer(customer);
+        }
 
-        for (Product p:favorite.getProduct()){
+        for (Product p : favorite.getProduct()) {
             if (p.equals(product))
                 throw new ApiException("This product is already in your favorite list");
         }
@@ -52,8 +55,8 @@ public class FavoriteService {
     public FavoriteOutDTO convertFavoriteToDTO(Collection<Product> products){
         List<ProductOutCU> productsDTO=new ArrayList<>();
 
-        for (Product p:products){
-            productsDTO.add(new ProductOutCU(p.getName(),p.getPrimaryImage()));
+        for (Product p : products) {
+            productsDTO.add(new ProductOutCU(p.getName(), p.getPrimaryImage()));
         }
 
         return new FavoriteOutDTO(productsDTO);
