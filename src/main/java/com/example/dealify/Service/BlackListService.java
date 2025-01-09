@@ -22,6 +22,10 @@ public class BlackListService {
     private final BlackListRepository blackListRepository;
     private final CustomerRepository customerRepository;
 
+    public List<Blacklist> getAllBlacklists(){//Waleed
+        return blackListRepository.findAll();
+    }
+
     public List<BlackListOutDTO> getVendorBlackList(VendorProfile vendorProfile){//Waleed
 
         List<Blacklist> blackLists=blackListRepository.findBlackListsByVendor(vendorProfile);

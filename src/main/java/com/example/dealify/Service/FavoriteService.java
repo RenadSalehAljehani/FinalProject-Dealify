@@ -20,12 +20,16 @@ public class FavoriteService {
 
     private final FavoriteRepository favoriteRepository;
 
-    public FavoriteOutDTO getCustomerFavorites(CustomerProfile customerProfile){
+    public List<Favorite> getAllFavorites() {//Waleed
+        return favoriteRepository.findAll();
+    }
+
+    public FavoriteOutDTO getCustomerFavorites(CustomerProfile customerProfile) {//Waleed
         return convertFavoriteToDTO(favoriteRepository.findFavoriteByCustomer(customerProfile).getProduct());
     }
 
-    public void addProductToFavorite(CustomerProfile customer,Product product){
-        Favorite favorite=favoriteRepository.findFavoriteByCustomer(customer);
+    public void addProductToFavorite(CustomerProfile customer, Product product) {//Waleed
+        Favorite favorite = favoriteRepository.findFavoriteByCustomer(customer);
 
         if (favorite == null) {
             favorite = new Favorite();
@@ -41,8 +45,8 @@ public class FavoriteService {
         favoriteRepository.save(favorite);
     }
 
-    public void removeProductFromFavorite(CustomerProfile customer, Product product){
-        Favorite favorite=favoriteRepository.findFavoriteByCustomer(customer);
+    public void removeProductFromFavorite(CustomerProfile customer, Product product) {//Waleed
+        Favorite favorite = favoriteRepository.findFavoriteByCustomer(customer);
 
         if (!favorite.getProduct().contains(product))
             throw new ApiException("Product is not in favorites list");
@@ -52,8 +56,8 @@ public class FavoriteService {
         favoriteRepository.save(favorite);
     }
 
-    public FavoriteOutDTO convertFavoriteToDTO(Collection<Product> products){
-        List<ProductOutCU> productsDTO=new ArrayList<>();
+    public FavoriteOutDTO convertFavoriteToDTO(Collection<Product> products) {//Waleed
+        List<ProductOutCU> productsDTO = new ArrayList<>();
 
         for (Product p : products) {
             productsDTO.add(new ProductOutCU(p.getName(), p.getPrimaryImage()));

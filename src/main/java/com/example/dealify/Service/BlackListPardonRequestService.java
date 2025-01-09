@@ -26,6 +26,10 @@ public class BlackListPardonRequestService {
     private final VendorProfileRepository vendorProfileRepository;
     private final BlackListRepository blackListRepository;
 
+    public List<BlackListPardonRequest> getAllBlacklistPardonRequests(){//Waleed
+        return blackListPardonRequestRepository.findAll();
+    }
+
     public List<BlackListPardonRequestOutDTO> getVendorBlackListPardonRequests(VendorProfile vendor){
         List<BlackListPardonRequest> blackListPardonRequests=blackListPardonRequestRepository.findBlackListPardonRequestsByVendor(vendor);
 

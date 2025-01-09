@@ -22,9 +22,20 @@ public class ProductReviewService {
     private final ProductReviewRepository productReviewRepository;
     private final ProductRepository productRepository;
 
-    public List<ProductReviewOutDTO> getAllProductReviews(Product product){
-        List<ProductReview> productReviews=productReviewRepository.findProductReviewsByProduct(product);
-        if (productReviews==null) throw new ApiException("Product reviews not found");
+    public List<ProductReview> getProductReviews() {//Waleed
+        return productReviewRepository.findAll();
+    }
+
+    public void deleteAProductReview(Integer productReviewId) {//Waleed
+        ProductReview productReview = productReviewRepository.findProductReviewById(productReviewId);
+        if (productReview == null) throw new ApiException("Product review not found");
+
+        productReviewRepository.delete(productReview);
+    }
+
+    public List<ProductReviewOutDTO> getAllProductReviews(Product product) {
+        List<ProductReview> productReviews = productReviewRepository.findProductReviewsByProduct(product);
+        if (productReviews == null) throw new ApiException("Product reviews not found");
 
         List<ProductReviewOutDTO> productReviewOutDTOS = new ArrayList<>();
         for (ProductReview pr : productReviews) {
